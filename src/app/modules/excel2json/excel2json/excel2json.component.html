@@ -1,1 +1,28 @@
-<p>excel2json works!</p>
+
+<mat-grid-list cols="2" rowHeight="1:1">
+    <mat-grid-tile>
+        <mat-card class="example-card">
+            <mat-card-header>
+                <mat-card-title>Excel to JSON</mat-card-title>
+                <mat-card-subtitle>Here you can convert your Excel file to JSON format</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+                Choose your file to convert: <br><br>
+                <input type="file" style="display: inline-block;" (change)="incomingfile($event)" placeholder="Upload file" accept=".xlsx">
+            </mat-card-content>
+        </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-card class="example-card">
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image"></div>
+                    <mat-card-title>Converter Output</mat-card-title>
+                    <mat-card-subtitle></mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                    <ngx-json-viewer [json]="data"></ngx-json-viewer>
+                </mat-card-content>
+        </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+
