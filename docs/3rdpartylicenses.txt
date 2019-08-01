@@ -84,8 +84,6 @@ THE SOFTWARE.
 
 @angular/material/card
 
-@angular/material/grid-list
-
 @angular/material/toolbar
 
 @angular/platform-browser
