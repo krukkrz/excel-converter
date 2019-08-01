@@ -1,6 +1,5 @@
-
-<mat-grid-list cols="2" rowHeight="1:1">
-    <mat-grid-tile>
+<div class="row justify-content-center" style="padding: 20px">
+    <div class="col-md-5 col-lg-4">
         <mat-card class="example-card">
             <mat-card-header>
                 <mat-card-title>Excel to JSON</mat-card-title>
@@ -11,8 +10,8 @@
                 <input type="file" style="display: inline-block;" (change)="incomingfile($event)" placeholder="Upload file" accept=".xlsx">
             </mat-card-content>
         </mat-card>
-    </mat-grid-tile>
-    <mat-grid-tile>
+    </div>
+    <div class="col-md-5 col-lg-4">
         <mat-card class="example-card">
                 <mat-card-header>
                     <div mat-card-avatar class="example-header-image"></div>
@@ -23,6 +22,6 @@
                     <ngx-json-viewer [json]="data"></ngx-json-viewer>
                 </mat-card-content>
         </mat-card>
-    </mat-grid-tile>
-  </mat-grid-list>
+    </div>
+</div>
 

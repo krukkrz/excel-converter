@@ -1,0 +1,10 @@
+.custom{
+    padding: 20px;
+    margin-top: 5vh;
+}
+
+a:link , a:visited, a:hover{
+	text-decoration:none;
+    color: rgb(1, 23, 151);
+    font-weight: 600;
+}

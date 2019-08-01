@@ -1,17 +1,27 @@
 import { NgModule } from '@angular/core';
 import { TopbarComponent } from './topbar/topbar.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { IntroComponent } from './intro/intro.component';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
+import {MatDividerModule} from '@angular/material/divider';
+
 
 
 @NgModule({
     declarations: [
-        TopbarComponent
+        TopbarComponent,
+        IntroComponent
     ],
     imports: [
-        MatToolbarModule
+        MatToolbarModule,
+        MatGridListModule,
+        MatCardModule,
+        MatDividerModule
     ],
     exports: [
-        TopbarComponent
+        TopbarComponent,
+        IntroComponent
     ]
 })
 export class SharedModule{}
